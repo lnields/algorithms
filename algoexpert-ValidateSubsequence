@@ -1,0 +1,13 @@
+def isValidSubsequence(array, sequence):
+	seen = []
+    for i in array:
+		if i in sequence:
+			seen.append(i)
+			if len(seen) == len(sequence):
+				break
+		
+	if seen == sequence:
+		return True
+	else:
+		return False
+	
